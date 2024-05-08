@@ -1,9 +1,10 @@
 .Heading{
+    color: gainsboro;
     text-align: center ;
+    animation-duration:100s;
+    animation-name: heading;
 }
-.container-bg{
-    background-color: red;
-}
+
 .mx-auto{
     margin: auto;
 }
