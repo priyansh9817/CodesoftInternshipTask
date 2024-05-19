@@ -2,14 +2,18 @@
     padding: 0;
     margin: 0;
 }
+html{
+    scroll-behavior: smooth;
+}
 #navbar{
     display: flex;
     background-color: black;
     align-items: center;
-    /* position: fixed; */
+    position: fixed;
     top: 2px;
     font-family:'poppins',sans-serif;
     width: 100%;
+    z-index: 1;
 }
 .logo{
     width:"70px";
@@ -33,9 +37,10 @@
 #navbar ul li a{
     color: white;
     display: block;
-     padding: 3px 22px; /* it is used for giving space btw two elements for x and y axis */
+    padding: 3px 22px;
     border-radius: 20px;
-    text-decoration:none ;
+    text-decoration: none;
+    font-size: 24px;
 }
 #navbar ul li a:hover{
     color: black;
@@ -95,49 +100,99 @@
 }
 /* about */
 p{
-    font-size: 0.9rem;
-    line-height: 23px;
+    font-size: 1.9rem;
 
 }
 h1{
     margin: 0;
+    font-size: 80px;
 }
 .skewed{
-    width: 45rem;
+    width: 100vw;
     color: #f1f1f1;
     display: flex;
     background: #111;
-    margin: 2em 0;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+    margin: 0em 0;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7)
 }
 .text{
-    padding: 1.5rem;
-    width: 50%;
+    padding: 2.5rem;
+    width: 31%;
     display: flex;
     justify-content: space-evenly;
     align-items: flex-start;
     flex-direction: column;
+
 }
 a{
     color: #fff;
     text-decoration: none;
+    font-size: 35px;
+    transition: all 0.3s ease;
+}
+a:hover{
+    text-decoration: line-through;
+    color: #e4e4e4;
+    text-shadow: #151313;
 }
 .image{
-    width: 50%;
-    height: 17rem;
+    width: 69%;
+    height: 50vw;
     position: relative;
     overflow: hidden;
 }
  .image::before{
     content: ' ';
     position: absolute;
-    left: -6.1rem;
-    top: 50%;
+    left: -32.1rem;
+    top: 63%;
     transform: translateY(-50%) rotate(20deg);
     background: #111;
-    width: 40%;
-    height: 140%;
+    width: 41rem;
+    height: 228rem;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+
  }
+ .shadow{
+    display: flex;
+    height: 80vh;
+    width: 100vw;
+    justify-content: space-evenly;
+    align-items: flex-start;
+ }
+ .col-s1{
+    width: 50vw;
+    height: 70vh;
+    text-align: justify;
+    position: relative;
+    justify-items: center;
+    transform: translate(57px, 250px);
+}
+.col-s2 img{
+    width: 60vw;
+    height: 65vh;
+    justify-items: center;
+    padding-top: 150px;
+}
+.CON{
+    font-size: 65px;
+    font-family: cursive;
+    font-weight: bolder;
+}
+.CRE{
+    font-family: emoji;
+    font-weight: 500;
+    font-size: 55px;
+}
+.URUS{
+    font-size: 9rem;
+    font-family: fantasy;
+    padding-left: 208px;
+    line-height: 211px;
+    text-shadow: 5px 3px gray;
+}
+
+
+
 
 
